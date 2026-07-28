@@ -25,6 +25,7 @@ When present and relevant, inspect:
 
 - `PROJECT.md` for the declared decision, audience, scope, success criteria, and reframing signals;
 - `KNOWLEDGE_LEDGER.md` for current decisions, assumptions, evidence, contradictions, and uncertainties;
+- `CONCEPT_REGISTRY.json` for governing concepts, definitions, scope, authority, and unresolved conflicts;
 - `EVALUATION.md` for sufficiency and acceptance criteria;
 - pertinent workflow or deliverable files for the approach or result under review.
 
@@ -103,6 +104,7 @@ Use only the relevant tests.
 - Does the work address the decision or only produce the requested artifact?
 - Has the problem been framed too narrowly, at the wrong level, or around a proxy?
 - Do the declared project context and the reconstructed problem materially disagree?
+- Does an unstable or conflicting concept change the problem, evidence, or recommendation?
 
 ### Evidence test
 

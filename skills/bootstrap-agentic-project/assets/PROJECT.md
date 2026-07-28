@@ -18,6 +18,10 @@
 
 ## Fuentes de verdad
 
+## Conceptos rectores
+
+- Identificadores del registro conceptual que gobiernan el proyecto:
+
 ## Restricciones y dependencias
 
 ## Criterios de éxito

@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "project": "",
+  "status": "draft",
+  "last_updated": "",
+  "authority_order": [
+    "binding-law",
+    "contract-or-client",
+    "project-approved",
+    "discipline-adopted",
+    "organization",
+    "general-language"
+  ],
+  "concepts": []
+}

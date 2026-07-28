@@ -16,6 +16,7 @@ Crear el sistema mínimo de contexto persistente que reduzca trabajo futuro sin 
    - entregables y consumidores;
    - tareas repetibles o de alto costo;
    - riesgos de error, privacidad y mantenimiento.
+   - conceptos científicos, técnicos, jurídicos o analíticos cuyo significado deba permanecer estable.
 3. Aplicar la prueba de materialidad de [references/artifact-selection.md](references/artifact-selection.md).
 4. Proponer el conjunto mínimo de artefactos. Crear directamente los de bajo riesgo; pedir una decisión solo si dos estructuras plausibles cambiarían materialmente el proyecto.
 5. Adaptar las plantillas pertinentes de `assets/`. Eliminar instrucciones y campos que no apliquen; no dejar marcadores genéricos.
@@ -36,10 +37,12 @@ Crear solo los elementos justificados:
 - `PROJECT.md`: propósito, alcance, actores, entregables y criterios de éxito.
 - `CONTEXT_POLICY.md`: fuentes canónicas, materialidad y ciclo de vida del contexto.
 - `KNOWLEDGE_LEDGER.md`: índice de decisiones, supuestos, evidencia e incertidumbres.
+- `CONCEPT_REGISTRY.json`: conceptos controlados, definiciones, alcance, autoridad y relaciones.
 - `workflows/<nombre>.md`: especificación de un proceso recurrente.
 - `EVALUATION.md`: línea base, casos de prueba y métricas si se automatizará una decisión material.
 
 No usar el ledger como almacén universal. Enlazar documentos extensos, datos y resultados en vez de copiarlos.
+Crear el registro conceptual cuando el proyecto dependa de términos definidos, varias disciplinas, traducción, regulación o distinciones capaces de cambiar conclusiones. No crearlo para vocabulario ordinario.
 
 ## Economía de contexto
 
@@ -48,6 +51,7 @@ No usar el ledger como almacén universal. Enlazar documentos extensos, datos y 
 - Mantener el estado de ejecución separado del conocimiento durable.
 - Preferir índices y enlaces a duplicación.
 - Crear un archivo nuevo solo si pasa la prueba de materialidad.
+- Cargar del registro conceptual solo las entradas pertinentes cuando crezca.
 
 ## Límites
 

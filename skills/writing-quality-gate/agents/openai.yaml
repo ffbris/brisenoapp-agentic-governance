@@ -1,0 +1,6 @@
+interface:
+  display_name: "Puerta de calidad editorial"
+  short_description: "Aplica una base ligera y ofrece revisión profunda"
+  default_prompt: "Usa $writing-quality-gate para aplicar la línea base y decidir si este texto necesita una revisión adicional."
+policy:
+  allow_implicit_invocation: true

@@ -1,6 +1,6 @@
 # Codex Agentic Governance
 
-Cuatro skills de invocación explícita para encuadrar, revisar y operar proyectos agénticos eficientes, trazables y mantenibles.
+Skills para gobernar proyectos, conceptos y entregables agénticos con eficiencia, trazabilidad y control editorial.
 
 ## Skills
 
@@ -8,8 +8,11 @@ Cuatro skills de invocación explícita para encuadrar, revisar y operar proyect
 - `$design-efficient-workflow`: diseña workflows con economía de cómputo, recuperación selectiva, estados, validaciones y límites.
 - `$maintain-knowledge-ledger`: mantiene un índice canónico de decisiones, supuestos, evidencia e incertidumbres.
 - `$whole-problem-reviewer`: revisa independientemente si un encuadre, desviación o entregable resuelve el problema completo.
+- `$technical-clarity-editor`: edita prosa científica, técnica, jurídica e instructiva en español o inglés.
+- `$brisenoapp-stop-slop`: limpia borradores y productos finales sin borrar voz, precisión ni conceptos controlados.
+- `$writing-quality-gate`: pregunta una vez qué tratamiento editorial necesita un artefacto reutilizable.
 
-Las cuatro tienen `allow_implicit_invocation: false`: Codex solo debe cargarlas cuando se mencionen por nombre.
+Solo `$writing-quality-gate` permite invocación implícita. Las demás se cargan únicamente cuando se mencionan por nombre.
 
 ## Instalación
 

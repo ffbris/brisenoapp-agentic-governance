@@ -15,6 +15,8 @@ Registrar una entrada cuando pueda cambiar una decisión, resultado, interpretac
 - `RES`: resultado reutilizable.
 - `CHG`: cambio que sustituye conocimiento anterior.
 
+Una decisión conceptual se registra como `DEC` o `CHG` y enlaza la entrada correspondiente de `CONCEPT_REGISTRY.json`; no copia toda su definición.
+
 ## Estado epistémico
 
 - verificado;

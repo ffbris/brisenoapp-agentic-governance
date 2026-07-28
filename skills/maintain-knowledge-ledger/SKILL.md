@@ -10,6 +10,7 @@ Conservar conocimiento material del proyecto sin duplicar documentos, datos ni h
 ## Procedimiento
 
 1. Inspeccionar el ledger existente, el contexto canónico y los artefactos afectados.
+   Si existe `CONCEPT_REGISTRY.json`, consultar las entradas pertinentes.
 2. Identificar candidatos y aplicar [references/entry-policy.md](references/entry-policy.md).
 3. Crear el ledger desde `assets/KNOWLEDGE_LEDGER.md` si no existe y su valor futuro justifica mantenerlo.
 4. Actualizar entradas por identificador estable:
@@ -20,6 +21,7 @@ Conservar conocimiento material del proyecto sin duplicar documentos, datos ni h
    - resolver o cerrar preguntas sin borrar su historia material.
 5. Deduplicar entradas semánticamente equivalentes y escoger una formulación canónica.
 6. Detectar contradicciones. No resolverlas sin evidencia; registrarlas como incertidumbre o pregunta abierta.
+   No resolver conflictos terminológicos mediante sinónimos. Aplicar la autoridad y el alcance declarados o escalar.
 7. Comprobar enlaces, estados, fechas y procedencia.
 8. Resumir cambios materiales, elementos obsoletos y cuestiones que requieren decisión.
 
@@ -28,6 +30,7 @@ Conservar conocimiento material del proyecto sin duplicar documentos, datos ni h
 - Decisiones que restringen trabajo futuro.
 - Supuestos capaces de cambiar resultados.
 - Definiciones operativas no obvias.
+- Decisiones que adoptan, sustituyen o restringen un concepto controlado.
 - Evidencia que respalda una conclusión material.
 - Incertidumbres y límites con consecuencias.
 - Preguntas abiertas con responsable o condición de resolución.
@@ -39,6 +42,7 @@ Conservar conocimiento material del proyecto sin duplicar documentos, datos ni h
 - Transcripciones de conversación.
 - Tareas rutinarias o estado efímero de ejecución.
 - Contenido ya canónico en otro archivo, salvo un enlace y su implicación.
+- Definiciones completas ya vigentes en `CONCEPT_REGISTRY.json`.
 - Información fácilmente derivable del repositorio.
 - Opiniones sin efecto sobre decisiones o resultados.
 - Secretos, credenciales o datos personales innecesarios.
@@ -49,6 +53,7 @@ Conservar conocimiento material del proyecto sin duplicar documentos, datos ni h
 - Distinguir hecho verificado, inferencia, supuesto e incertidumbre.
 - No convertir ausencia de evidencia en evidencia de ausencia.
 - Enlazar la fuente primaria o el artefacto canónico.
+- Usar etiquetas canónicas dentro de su alcance y registrar la razón de cambios terminológicos materiales.
 - No borrar decisiones sustituidas si explican resultados históricos.
 - Mantener el ledger como índice; mover el desarrollo extenso a documentos especializados.
 

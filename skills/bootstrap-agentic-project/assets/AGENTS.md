@@ -25,12 +25,15 @@
 - Vincular conclusiones materiales con sus fuentes, transformaciones y supuestos.
 - No inventar datos, citas, resultados ni estado de ejecución.
 - Verificar los entregables en el formato en que se consumirán.
+- Usar las etiquetas canónicas de `CONCEPT_REGISTRY.json` dentro de su alcance; no introducir sinónimos por variedad.
+- No resolver silenciosamente conflictos entre definiciones vinculantes, del cliente, del proyecto, disciplinarias o generales.
 
 ## Contexto canónico
 
 - `[PROJECT.md]`: propósito, alcance y audiencia.
 - `[CONTEXT_POLICY.md]`: selección y ciclo de vida del contexto.
 - `[KNOWLEDGE_LEDGER.md]`: decisiones y conocimiento material.
+- `[CONCEPT_REGISTRY.json]`: conceptos y terminología controlada.
 - `[workflows/]`: procesos recurrentes.
 
 Leer únicamente los archivos pertinentes para la tarea.

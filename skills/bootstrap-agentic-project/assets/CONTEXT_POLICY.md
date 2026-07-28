@@ -24,6 +24,7 @@ Un artefacto debe evitar retrabajo, conservar conocimiento no derivable, permiti
 | Instrucciones | Reglas estables | Vida del proyecto |
 | Contexto del proyecto | Propósito y restricciones | Vida del proyecto |
 | Ledger | Conocimiento material | Evolutivo |
+| Registro conceptual | Significados y términos vigentes | Evolutivo |
 | Estado del workflow | Checkpoints y pendientes | Ejecución |
 | Contexto de tarea | Fragmentos necesarios | Temporal |
 | Evidencia cruda | Datos y fuentes | Archivo |

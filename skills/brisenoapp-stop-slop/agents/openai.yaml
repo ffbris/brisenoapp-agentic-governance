@@ -1,0 +1,7 @@
+interface:
+  display_name: "Brisenoapp Stop Slop"
+  short_description: "Edita borradores sin perder voz ni precisión"
+  default_prompt: "Usa $brisenoapp-stop-slop para revisar este borrador y quitar patrones de IA sin perder precisión ni voz."
+
+policy:
+  allow_implicit_invocation: false

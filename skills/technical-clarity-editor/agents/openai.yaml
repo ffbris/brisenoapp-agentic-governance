@@ -1,0 +1,6 @@
+interface:
+  display_name: "Editor de claridad técnica"
+  short_description: "Edita prosa técnica bilingüe con reglas verificables"
+  default_prompt: "Usa $technical-clarity-editor para revisar este texto con el perfil técnico adecuado en español o inglés."
+policy:
+  allow_implicit_invocation: false

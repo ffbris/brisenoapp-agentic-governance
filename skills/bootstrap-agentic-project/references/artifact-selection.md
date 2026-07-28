@@ -22,6 +22,7 @@ Si no cumple ninguna, mantenerlo en el contexto temporal de la tarea.
 | Propósito, alcance y audiencia | `PROJECT.md` |
 | Gobernanza del contexto | `CONTEXT_POLICY.md` |
 | Decisiones y conocimiento material | `KNOWLEDGE_LEDGER.md` |
+| Conceptos, términos y definiciones controladas | `CONCEPT_REGISTRY.json` |
 | Proceso recurrente | `workflows/<nombre>.md` |
 | Calidad comparable entre versiones | `EVALUATION.md` |
 | Decisión técnica extensa | `docs/decisions/<id>.md` |
@@ -40,3 +41,15 @@ Cuando sea útil, incluir:
 - exclusiones.
 
 Antes de crear un archivo, buscar si otro artefacto ya cumple la función. No duplicar la misma verdad.
+
+## Registro conceptual
+
+Crearlo si una variación terminológica puede cambiar interpretación, análisis, obligación o interoperabilidad. Usar identificadores conceptuales independientes del idioma y campos opcionales según tipo:
+
+- concepto o marco: implicaciones y exclusiones;
+- término jurídico: jurisdicción, fuente y vigencia;
+- variable: unidad, población y método;
+- indicador: fórmula, fuente y periodicidad;
+- proceso: estados, entradas y salidas.
+
+No forzar conceptos generales dentro de un esquema para indicadores.

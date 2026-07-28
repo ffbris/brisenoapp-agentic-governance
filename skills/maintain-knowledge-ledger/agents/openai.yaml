@@ -1,0 +1,6 @@
+interface:
+  display_name: "Mantener knowledge ledger"
+  short_description: "Registra conocimiento material sin duplicarlo"
+  default_prompt: "Usa $maintain-knowledge-ledger para crear o actualizar el registro de conocimiento material del proyecto."
+policy:
+  allow_implicit_invocation: false

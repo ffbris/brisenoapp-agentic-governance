@@ -1,0 +1,6 @@
+interface:
+  display_name: "Diseñar workflow eficiente"
+  short_description: "Optimiza costo, contexto y calidad del flujo"
+  default_prompt: "Usa $design-efficient-workflow para diseñar este flujo con la menor carga total que preserve la calidad."
+policy:
+  allow_implicit_invocation: false

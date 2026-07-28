@@ -1,0 +1,6 @@
+interface:
+  display_name: "Inicializar proyecto agéntico"
+  short_description: "Crea un proyecto trazable y mantenible"
+  default_prompt: "Usa $bootstrap-agentic-project para inicializar este proyecto con contexto, memoria y reglas proporcionales."
+policy:
+  allow_implicit_invocation: false

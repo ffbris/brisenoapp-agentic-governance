@@ -1,0 +1,7 @@
+interface:
+  display_name: "Whole Problem Reviewer"
+  short_description: "Revisa el problema completo en puntos de control"
+  default_prompt: "Usa $whole-problem-reviewer para revisar si este encuadre, cambio o entregable resuelve el problema completo."
+
+policy:
+  allow_implicit_invocation: false

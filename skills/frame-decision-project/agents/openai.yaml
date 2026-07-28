@@ -1,0 +1,6 @@
+interface:
+  display_name: "Frame Decision Project"
+  short_description: "Frame projects and govern material drift"
+  default_prompt: "Use $frame-decision-project to frame this project or assess whether new findings require continuation, extension, a branch, or reframing."
+policy:
+  allow_implicit_invocation: false

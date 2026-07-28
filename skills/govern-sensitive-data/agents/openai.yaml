@@ -1,0 +1,6 @@
+interface:
+  display_name: "Govern Sensitive Data"
+  short_description: "Control sensitive-data use and disclosure"
+  default_prompt: "Use $govern-sensitive-data to classify this data flow and define safe handling without changing authorized analysis or conclusions."
+policy:
+  allow_implicit_invocation: false

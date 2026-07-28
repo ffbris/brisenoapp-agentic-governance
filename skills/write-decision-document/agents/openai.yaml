@@ -1,0 +1,6 @@
+interface:
+  display_name: "Write Decision Document"
+  short_description: "Build evidence-led decision documents"
+  default_prompt: "Use $write-decision-document to plan, draft, integrate, and review this decision-oriented document."
+policy:
+  allow_implicit_invocation: false

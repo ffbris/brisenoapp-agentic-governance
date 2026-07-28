@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ffbris/brisenoapp-agentic-governance/concept-registry.schema.json",
+  "title": "Brisenoapp Concept Registry",
+  "type": "object",
+  "required": ["schema_version", "status", "authority_order", "concepts"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"type": "string", "const": "1.0"},
+    "project": {"type": "string"},
+    "status": {"enum": ["draft", "current", "deprecated"]},
+    "last_updated": {"type": "string"},
+    "authority_order": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "concepts": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/concept"}
+    }
+  },
+  "$defs": {
+    "concept": {
+      "type": "object",
+      "required": ["id", "type", "status", "canonical_labels", "definition", "scope", "authority"],
+      "additionalProperties": true,
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+        "type": {"enum": ["concept", "analytical-framework", "legal-term", "variable", "indicator", "process"]},
+        "status": {"enum": ["draft", "current", "deprecated", "superseded", "contested"]},
+        "canonical_labels": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": {"type": "string", "minLength": 1}
+        },
+        "definition": {"type": "string", "minLength": 1},
+        "scope": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "authority": {
+          "type": "object",
+          "required": ["level", "source"],
+          "additionalProperties": false,
+          "properties": {
+            "level": {"type": "string", "minLength": 1},
+            "source": {"type": "string", "minLength": 1}
+          }
+        },
+        "deprecated_labels": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {"type": "string", "minLength": 1}
+          }
+        },
+        "relations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["type", "target"],
+            "additionalProperties": false,
+            "properties": {
+              "type": {"enum": ["broader_than", "narrower_than", "related_not_equivalent", "conflicts_with", "supersedes"]},
+              "target": {"type": "string", "minLength": 1}
+            }
+          }
+        }
+      }
+    }
+  }
+}

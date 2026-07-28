@@ -42,6 +42,10 @@
 
 ## Validación
 
+- Nivel de evaluación:
+- Presupuesto:
+- Condición de salida:
+
 ## Condiciones
 
 - Continuar:

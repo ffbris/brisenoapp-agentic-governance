@@ -28,7 +28,7 @@ Producir texto preciso, comprobable y adecuado a su género. Simplificar la form
    - oraciones y palabras;
    - formato.
 7. No resolver mediante estilo una contradicción, ambigüedad conceptual o afirmación sin respaldo. Señalarla por separado.
-8. Cuando haya un archivo, ejecutar `scripts/technical_clarity_lint.py` con idioma, perfil y registro conceptual. Tratar el resultado como detección heurística, no certificación.
+8. Cuando haya un archivo, ejecutar `scripts/technical_clarity_lint.py` con idioma explícito, perfil y registro conceptual. Tratar el resultado como comprobación mecánica parcial, no certificación.
 9. En `strict-instructional`, corregir todos los errores o registrar una excepción explícita. En otros perfiles, usar las advertencias como candidatos sujetos a juicio.
 10. Entregar únicamente el texto solicitado, salvo que la persona pida diagnóstico o que persista un conflicto material.
 
@@ -50,7 +50,7 @@ En `strict-instructional`:
 - usar imperativo para acciones del usuario;
 - colocar la condición antes de la acción;
 - nombrar al actor;
-- usar voz activa;
+- usar voz activa mediante revisión lingüística, no detección automática;
 - respetar límites duros configurados por idioma;
 - presentar advertencias antes de la acción riesgosa;
 - conservar literalmente controles, rutas, códigos y nombres de interfaz;
@@ -69,7 +69,7 @@ python3 scripts/technical_clarity_lint.py FILE \
   --concepts CONCEPT_REGISTRY.json
 ```
 
-Usar `--instruction-max-words` y `--descriptive-max-words` para límites calibrados del proyecto. Usar `--format json` para workflows. El linter aplica límites distintos por idioma, omite bloques de código y marca términos obsoletos. No confirma verdad, suficiencia jurídica, validez científica ni cumplimiento de ASD-STE100.
+Usar `--instruction-max-words` y `--descriptive-max-words` para límites calibrados del proyecto. Usar `--format json` para workflows. El linter aplica límites distintos por idioma, marca términos obsoletos y declara las líneas excluidas de las comprobaciones de oración. En modo ultraestricto exige `--lang es` o `--lang en`. No detecta voz pasiva, claridad, verdad, suficiencia jurídica, validez científica ni cumplimiento de ASD-STE100.
 
 ## Procedencia
 

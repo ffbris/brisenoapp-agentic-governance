@@ -23,7 +23,8 @@ Conservar conocimiento material del proyecto sin duplicar documentos, datos ni h
 6. Detectar contradicciones. No resolverlas sin evidencia; registrarlas como incertidumbre o pregunta abierta.
    No resolver conflictos terminológicos mediante sinónimos. Aplicar la autoridad y el alcance declarados o escalar.
 7. Comprobar enlaces, estados, fechas y procedencia.
-8. Resumir cambios materiales, elementos obsoletos y cuestiones que requieren decisión.
+8. Si existe un plan de datos sensibles, respetar sus límites. Conservar conclusiones autorizadas con precisión; enlazar fuentes seguras y su clasificación de acceso sin copiar datos crudos.
+9. Resumir cambios materiales, elementos obsoletos y cuestiones que requieren decisión.
 
 ## Qué registrar
 
@@ -56,6 +57,7 @@ Conservar conocimiento material del proyecto sin duplicar documentos, datos ni h
 - Usar etiquetas canónicas dentro de su alcance y registrar la razón de cambios terminológicos materiales.
 - No borrar decisiones sustituidas si explican resultados históricos.
 - Mantener el ledger como índice; mover el desarrollo extenso a documentos especializados.
+- No anonimizar, generalizar ni debilitar automáticamente una conclusión. Separar persistencia del dato, precisión analítica y divulgación.
 
 ## Resultado
 

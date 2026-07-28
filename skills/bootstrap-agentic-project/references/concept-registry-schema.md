@@ -36,3 +36,5 @@ Cada concepto debe incluir:
 - `states`, `inputs`, `outputs`: procesos.
 
 No completar campos que no apliquen. Cuando dos autoridades compitan y la precedencia no sea clara, registrar el conflicto y solicitar decisión.
+
+El JSON Schema formal y el validador portable están en la skill `$maintain-concept-registry`. El schema comprueba estructura; la skill gobierna significado, autoridad y propagación.

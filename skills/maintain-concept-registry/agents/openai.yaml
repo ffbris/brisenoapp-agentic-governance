@@ -1,0 +1,6 @@
+interface:
+  display_name: "Maintain Concept Registry"
+  short_description: "Govern canonical concepts and terminology"
+  default_prompt: "Use $maintain-concept-registry to create or update the project concept registry without silently resolving conflicts."
+policy:
+  allow_implicit_invocation: false

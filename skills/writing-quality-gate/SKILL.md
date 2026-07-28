@@ -37,3 +37,5 @@ Explicar brevemente solo cuando haga falta:
 Recordar la elección para ese artefacto y sus revisiones durante la tarea. Volver a preguntar solo si cambia materialmente la audiencia, el género documental o el uso final.
 
 No interrumpir respuestas breves, conversación, exploración, notas internas ni contenido estructurado. No convertir una solicitud urgente o trivial en un cuestionario.
+
+La puerta decide tratamiento editorial, no arquitectura documental. Para un documento analítico o decisional complejo, mencionar `$write-decision-document` sólo si la persona está eligiendo un flujo; no invocarla ni ampliar el cuestionario automáticamente.

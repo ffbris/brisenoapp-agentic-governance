@@ -32,6 +32,7 @@ No asumir que programar primero siempre es mejor. Comparar:
    - casos límite;
    - criterio de aceptación;
    - presupuesto inicial.
+   Aplicar [references/proportional-evaluation.md](references/proportional-evaluation.md): la evaluación no debe costar más que el error o retrabajo que pretende evitar.
 7. Definir persistencia, caché, checkpoints e idempotencia para evitar repetir trabajo costoso.
 8. Separar generación y validación cuando el riesgo lo justifique.
 9. Registrar versiones de código, reglas, modelos, prompts, fuentes y esquemas que afecten la reproducibilidad.
@@ -59,6 +60,7 @@ Aplicar escalamiento selectivo: no elevar todo el lote por unos pocos casos dif�
 - Guardar estado después de cada unidad costosa.
 - Hacer operaciones idempotentes o detectar trabajo ya realizado.
 - Definir estados terminales: completado, completado con reservas, escalado o fallido.
+- Detener la evaluación cuando el criterio de aceptación se cumpla, la información adicional no pueda cambiar la decisión o se agote su presupuesto.
 
 ## Entrega
 

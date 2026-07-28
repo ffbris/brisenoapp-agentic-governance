@@ -37,3 +37,5 @@ Un artefacto debe evitar retrabajo, conservar conocimiento no derivable, permiti
 - Datos personales no necesarios.
 - Duplicados de fuentes canónicas.
 - Transcripciones sin valor futuro demostrado.
+
+La prohibición controla persistencia, no autoriza a modificar conclusiones ni análisis. Registrar referencias y clasificación de acceso cuando la fuente deba permanecer en un ambiente seguro.

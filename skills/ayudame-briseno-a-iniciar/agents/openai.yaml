@@ -1,0 +1,6 @@
+interface:
+  display_name: "@Ayúdame, Briseño, a iniciar"
+  short_description: "Guía un proyecto desde la idea hasta el arranque"
+  default_prompt: "Usa $ayudame-briseno-a-iniciar para encuadrar este proyecto, proponer un prototipo eficiente y señalar las capacidades que faltan."
+policy:
+  allow_implicit_invocation: false

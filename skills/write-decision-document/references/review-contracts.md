@@ -32,4 +32,4 @@ Revisar fidelidad, jerarquía, contexto, interpretación, navegabilidad y capaci
 
 Una revisión comunicativa puede emitir `external substantive blocker` cuando el contenido autorizado impida una comunicación honesta. Debe describir el conflicto sin investigarlo ni resolverlo.
 
-Una revisión sustantiva puede emitir `framing review indicated`. La decisión vuelve a `$frame-decision-project`; no se modifica el proyecto dentro del flujo documental.
+Una revisión sustantiva puede emitir `framing review indicated`. La decisión vuelve a `$ayudame-briseno-a-iniciar`; no se modifica el proyecto dentro del flujo documental.

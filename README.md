@@ -36,10 +36,10 @@ Una *skill* es un conjunto de instrucciones reutilizables para una herramienta d
 En vez de explicar el mismo procedimiento cada vez, se puede invocar una skill por su nombre. Por ejemplo:
 
 ```text
-Usa $frame-decision-project para ayudarme a definir este proyecto.
+Usa $ayudame-briseno-a-iniciar para ayudarme a definir este proyecto.
 ```
 
-El signo `$` indica el nombre de la skill en Codex. En otras herramientas la forma de invocarla puede cambiar; por ejemplo, Claude Code utiliza `/frame-decision-project`.
+El signo `$` indica el nombre de la skill en Codex. En otras herramientas la forma de invocarla puede cambiar; por ejemplo, Claude Code utiliza `/ayudame-briseno-a-iniciar`.
 
 Las skills de esta colección no sustituyen el juicio profesional. Ayudan a organizar preguntas, documentar decisiones, detectar riesgos y producir resultados más fáciles de revisar.
 
@@ -49,7 +49,7 @@ La colección funciona como un sistema conectado, no como una lista que deba eje
 
 En la mayoría de los casos basta con invocar la skill que corresponde a la necesidad del momento. Por ejemplo:
 
-- para iniciar un proyecto, usar `$frame-decision-project`;
+- para iniciar un proyecto, usar `$ayudame-briseno-a-iniciar`;
 - para preparar un informe, usar `$write-decision-document`;
 - para revisar un argumento, usar `$whole-problem-reviewer`;
 - para mejorar un proceso repetible, usar `$design-efficient-workflow`.
@@ -70,9 +70,9 @@ La persona decide si autoriza ese siguiente paso. Así se conserva la integraci�
 
 ## ¿Qué puede hacer la colección?
 
-### 1. Iniciar y encuadrar un proyecto
+### 1. Pedir ayuda a Briseño para iniciar un proyecto
 
-`$frame-decision-project` ayuda a distinguir:
+`$ayudame-briseno-a-iniciar` ayuda a distinguir:
 
 - lo que se pidió literalmente;
 - la decisión que realmente debe apoyarse;
@@ -83,10 +83,22 @@ También puede revisar si un hallazgo nuevo forma parte del mismo proyecto, requ
 
 La IA sólo recomienda. No puede cambiar el alcance, abrir una rama ni reescribir el contexto principal sin autorización.
 
+Si el proyecto se dirige a software, una aplicación web o ciencia de datos, la skill también:
+
+- propone un prototipo pequeño para probar primero la incertidumbre principal;
+- diseña una ruta de crecimiento sin construir infraestructura prematuramente;
+- recomienda Git desde el inicio y GitHub para respaldo y colaboración;
+- propone qué debe excluirse de Git, incluidos datos pesados, confidenciales y regenerables;
+- revisa las capacidades técnicas disponibles;
+- busca en internet skills actuales para brechas materiales;
+- presenta las sugerencias antes de instalar o ampliar el alcance.
+
+La intención es que una persona pueda pedir ayuda para comenzar sin tener que conocer previamente todas las herramientas que necesitará.
+
 Ejemplo:
 
 ```text
-Usa $frame-decision-project para convertir esta idea en un proyecto de investigación.
+Usa $ayudame-briseno-a-iniciar para convertir esta idea en un proyecto de investigación.
 Quiero estudiar por qué disminuyó la participación en el programa y qué decisión
 debería tomar la organización.
 ```

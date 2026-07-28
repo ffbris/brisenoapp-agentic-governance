@@ -8,6 +8,11 @@ import shutil
 from pathlib import Path
 
 
+DEPRECATED_SKILLS = {
+    "frame-decision-project": "ayudame-briseno-a-iniciar",
+}
+
+
 def explicit_for_codex(skill: Path) -> bool:
     policy = skill / "agents" / "openai.yaml"
     return policy.exists() and "allow_implicit_invocation: false" in policy.read_text(encoding="utf-8")
@@ -41,6 +46,15 @@ def install(source: Path, target_root: Path, runtime: str, replace: bool) -> Non
             shutil.rmtree(target / "agents", ignore_errors=True)
             if explicit_for_codex(skill):
                 adapt_for_claude(target / "SKILL.md")
+    if replace:
+        for old_name in DEPRECATED_SKILLS:
+            old_target = target_root / old_name
+            if old_target.is_symlink():
+                old_target.unlink()
+            elif old_target.is_dir():
+                skill_file = old_target / "SKILL.md"
+                if skill_file.exists() and f"name: {old_name}" in skill_file.read_text(encoding="utf-8"):
+                    shutil.rmtree(old_target)
 
 
 def main() -> int:

@@ -31,6 +31,19 @@ class InstallerTests(unittest.TestCase):
             self.assertNotIn("disable-model-invocation:", implicit)
             self.assertFalse((target / "whole-problem-reviewer" / "agents").exists())
 
+    def test_replace_removes_deprecated_skill_name(self):
+        with tempfile.TemporaryDirectory() as directory:
+            target = Path(directory)
+            old = target / "frame-decision-project"
+            old.mkdir()
+            (old / "SKILL.md").write_text(
+                "---\nname: frame-decision-project\ndescription: old\n---\n",
+                encoding="utf-8",
+            )
+            INSTALLER.install(ROOT / "skills", target, "claude-code", replace=True)
+            self.assertFalse(old.exists())
+            self.assertTrue((target / "ayudame-briseno-a-iniciar").exists())
+
 
 if __name__ == "__main__":
     unittest.main()

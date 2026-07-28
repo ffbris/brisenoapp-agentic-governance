@@ -43,6 +43,31 @@ El signo `$` indica el nombre de la skill en Codex. En otras herramientas la for
 
 Las skills de esta colección no sustituyen el juicio profesional. Ayudan a organizar preguntas, documentar decisiones, detectar riesgos y producir resultados más fáciles de revisar.
 
+## No es necesario invocar todas las skills
+
+La colección funciona como un sistema conectado, no como una lista que deba ejecutarse completa.
+
+En la mayoría de los casos basta con invocar la skill que corresponde a la necesidad del momento. Por ejemplo:
+
+- para iniciar un proyecto, usar `$frame-decision-project`;
+- para preparar un informe, usar `$write-decision-document`;
+- para revisar un argumento, usar `$whole-problem-reviewer`;
+- para mejorar un proceso repetible, usar `$design-efficient-workflow`.
+
+Cada skill conoce sus límites, comparte una arquitectura común y señala cuándo otra especialidad podría ser necesaria. Los archivos canónicos del proyecto —como la definición del proyecto, el registro de decisiones o el registro conceptual— permiten que las reglas acordadas sigan presentes entre etapas sin repetir toda la conversación.
+
+Esto no significa que todas las skills se ejecuten automáticamente. La integración funciona así:
+
+1. la skill activa realiza su propia tarea;
+2. consulta el contexto pertinente;
+3. respeta decisiones y conceptos ya registrados;
+4. detecta si existe una necesidad fuera de su responsabilidad;
+5. propone un traspaso a otra skill sólo cuando podría cambiar materialmente el resultado.
+
+La persona decide si autoriza ese siguiente paso. Así se conserva la integración sin gastar contexto y cómputo en revisiones que el proyecto no necesita.
+
+`$writing-quality-gate` es la única skill que puede activarse implícitamente. Su función es ligera: aplicar una línea editorial básica y preguntar si un entregable necesita una revisión adicional. Las demás se ejecutan de forma expresa, directamente o como parte de un flujo que la persona haya autorizado.
+
 ## ¿Qué puede hacer la colección?
 
 ### 1. Iniciar y encuadrar un proyecto
@@ -204,28 +229,26 @@ La colección separa tres necesidades:
 - `$brisenoapp-stop-slop`: elimina relleno y patrones reconocibles de escritura de IA sin borrar voz ni precisión;
 - `$writing-quality-gate`: aplica una línea base ligera y pregunta si un entregable necesita una revisión adicional.
 
-Sólo `$writing-quality-gate` puede activarse de manera implícita. Las demás skills deben solicitarse expresamente.
+Sólo `$writing-quality-gate` puede activarse de manera implícita. Las demás skills se ejecutan de forma expresa, pero sus límites, artefactos compartidos y reglas de traspaso permiten que trabajen como partes de un mismo sistema.
 
 El editor técnico incluye comprobaciones mecánicas de extensión y términos controlados. Estas comprobaciones no certifican que un texto sea correcto, claro, científico o jurídicamente suficiente.
 
 ## Ejemplo de un proyecto completo
 
-Una investigación para preparar una recomendación podría utilizar la colección así:
+Una investigación para preparar una recomendación podría recorrer estas etapas:
 
 ```text
-1. Usa $frame-decision-project para definir la decisión y el problema.
-2. Usa $bootstrap-agentic-project para crear sólo el contexto necesario.
-3. Usa $maintain-concept-registry para fijar los conceptos importantes.
-4. Usa $build-reproducible-analysis para diseñar y documentar el análisis.
-5. Usa $maintain-knowledge-ledger para registrar decisiones y hallazgos materiales.
-6. Usa $write-decision-document para construir el informe.
-7. Usa $whole-problem-reviewer en modo substantive.
-8. Corrige los problemas del argumento.
-9. Usa $whole-problem-reviewer en modo communication.
-10. Aplica claridad técnica o Stop Slop si el documento lo necesita.
+1. Encuadrar la decisión y el problema.
+2. Crear únicamente el contexto que será útil después.
+3. Fijar los conceptos cuyo significado debe permanecer estable.
+4. Diseñar y documentar el análisis.
+5. Conservar decisiones y hallazgos materiales.
+6. Construir el informe.
+7. Revisar primero el contenido y después la comunicación.
+8. Aplicar claridad técnica o edición natural si hace falta.
 ```
 
-Este ejemplo no es una secuencia obligatoria. Un proyecto corto puede requerir sólo una o dos skills.
+No es necesario invocar manualmente una skill para cada renglón. Una skill de entrada puede cubrir su etapa, utilizar el contexto compartido y recomendar el siguiente módulo cuando sea material. El flujo tampoco es obligatorio: un proyecto corto puede requerir sólo una o dos skills.
 
 ## Principios de diseño
 

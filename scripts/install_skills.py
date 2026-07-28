@@ -9,7 +9,8 @@ from pathlib import Path
 
 
 DEPRECATED_SKILLS = {
-    "frame-decision-project": "ayudame-briseno-a-iniciar",
+    "frame-decision-project": "briseno-ayudame-a-iniciar",
+    "ayudame-briseno-a-iniciar": "briseno-ayudame-a-iniciar",
 }
 
 

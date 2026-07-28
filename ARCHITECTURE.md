@@ -1,11 +1,11 @@
 # Arquitectura
 
-Brisenoapp Agentic Governance separa responsabilidades para evitar que una skill acumule autoridad.
+Briseño, ayúdame a iniciar separa responsabilidades para evitar que una skill acumule autoridad.
 
 ## Núcleo
 
 - `bootstrap-agentic-project`: materializa contexto mínimo.
-- `ayudame-briseno-a-iniciar`: encuadra, orienta prototipos y propone decisiones de desviación.
+- `briseno-ayudame-a-iniciar`: encuadra, orienta prototipos y propone decisiones de desviación.
 - `design-efficient-workflow`: diseña ejecución y evaluación proporcional.
 - `maintain-knowledge-ledger`: conserva conocimiento material.
 - `maintain-concept-registry`: gobierna conceptos.
@@ -41,4 +41,4 @@ Whole Problem usa un solo target por revisión:
 - `substantive`;
 - `communication`.
 
-Un hallazgo sustantivo puede recomendar revisar el encuadre, pero vuelve a `ayudame-briseno-a-iniciar`. Un bloqueo sustantivo detectado durante comunicación se reporta sin abrir investigación.
+Un hallazgo sustantivo puede recomendar revisar el encuadre, pero vuelve a `briseno-ayudame-a-iniciar`. Un bloqueo sustantivo detectado durante comunicación se reporta sin abrir investigación.

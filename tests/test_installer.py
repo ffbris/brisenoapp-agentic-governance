@@ -42,7 +42,7 @@ class InstallerTests(unittest.TestCase):
             )
             INSTALLER.install(ROOT / "skills", target, "claude-code", replace=True)
             self.assertFalse(old.exists())
-            self.assertTrue((target / "ayudame-briseno-a-iniciar").exists())
+            self.assertTrue((target / "briseno-ayudame-a-iniciar").exists())
 
 
 if __name__ == "__main__":

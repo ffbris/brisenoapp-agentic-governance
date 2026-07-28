@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/ffbris/brisenoapp-agentic-governance/concept-registry.schema.json",
+  "$id": "https://github.com/ffbris/briseno-ayudame-a-iniciar/concept-registry.schema.json",
   "title": "Brisenoapp Concept Registry",
   "type": "object",
   "required": ["schema_version", "status", "authority_order", "concepts"],

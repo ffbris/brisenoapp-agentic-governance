@@ -1,9 +1,9 @@
 ---
-name: ayudame-briseno-a-iniciar
-description: Start or reframe a consulting, research, course, software, web app, data science, policy, legal, scientific, or solution-design project around the decision and result it must support. For development or data work, require prototype-first scalable architecture, Git/GitHub guidance, visible progress reporting, and a bounded internet search for missing skills. Distinguish continuation, extension, branch, and reframing while returning material decisions to the user. Use only when explicitly invoked as `$ayudame-briseno-a-iniciar`; never invoke implicitly.
+name: briseno-ayudame-a-iniciar
+description: Start or reframe a consulting, research, course, software, web app, data science, policy, legal, scientific, or solution-design project around the decision and result it must support. For development or data work, require prototype-first scalable architecture, Git/GitHub guidance, visible progress reporting, and a bounded internet search for missing skills. Distinguish continuation, extension, branch, and reframing while returning material decisions to the user. Use only when explicitly invoked as `$briseno-ayudame-a-iniciar`; never invoke implicitly.
 ---
 
-# Ayúdame, Briseño, a iniciar
+# Briseño, ayúdame a iniciar
 
 Guiar a una persona desde una idea hasta un proyecto viable sin exigir que conozca de antemano la arquitectura, las skills ni las herramientas disponibles.
 
